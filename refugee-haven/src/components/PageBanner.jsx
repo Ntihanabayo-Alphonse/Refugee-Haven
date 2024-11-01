@@ -9,7 +9,7 @@ const PageBanner = () => {
         <NavigationBar />
         <div className="page_banner h-[70vh] relative">
             <div className="page_banner-bg"></div>
-            {location.pathname === "/programs" ? (<h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Programs</h1>) : (<h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Donate</h1>)}
+            {location.pathname === "/programs" ? (<h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl text-[#FFFFFF] font-bold text-center'>Programs</h1>) : (<h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl text-[#FFFFFF] font-bold text-center'>Donate</h1>)}
         </div>
     </>
   )
