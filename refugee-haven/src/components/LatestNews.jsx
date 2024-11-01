@@ -19,9 +19,9 @@ const LatestNews = () => {
     return (
         <>
         { news && (
-            <div className="rounded-md shadow-md grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-14">
                 {news.map(article => (
-                    <div key={article?.id} className="mb-3">
+                    <div key={article?.id} className="rounded-md shadow-lg px-5 py-2">
                         <h3 className="text-lg font-semibold">{article?.title}</h3>
                         <p className="text-sm text-gray-500">{new Date(article?.date).toLocaleDateString()}</p>
                         <p className="text-sm mt-1">{article?.description}</p>
