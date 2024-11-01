@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             {/* Footer Section */}
-            <div className="footer flex justify-between px-28 py-16 bg-[#333333]">
+            <div className="footer flex justify-between flex-col sm:flex-row px-28 py-16 bg-[#333333]">
                 <div className="organization-details w-[300px]">
                     <div className="logo h-20 w-20 bg-[#E9E4D3] rounded-full">
                         <Link to="/"><img className='w-full h-full  object-cover' src={refugeeHavenLogo} alt="refugee haven logo" /></Link>
