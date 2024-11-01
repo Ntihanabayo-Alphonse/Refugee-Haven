@@ -5,6 +5,7 @@ import Programs from './Programs'
 import ImpactMap from './ImpactMap'
 import Donate from './Donate'
 import LatestNews from './LatestNews'
+import Footer from './Footer'
 
 
 const Home = () => {
@@ -43,14 +44,6 @@ const Home = () => {
             {/* Programs */}
             <Programs />
 
-            {/* Impact Section */}
-            {/* <div className="impact-section px-32 py-16">
-                <h2>Your Impact at a Glance</h2>
-                <div className="map-container">
-                    <ImpactMap />
-                </div>
-            </div> */}
-
             {/* Donate Section */}
             <Donate />
 
@@ -61,6 +54,9 @@ const Home = () => {
                     <LatestNews />
                 </div>
             </div>
+
+            {/* Footer Section */}
+            <Footer />
         </>
     )
 }
