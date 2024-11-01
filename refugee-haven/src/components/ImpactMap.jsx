@@ -6,7 +6,7 @@ import iconUrl from '/images/location-pin.png'
 
 // Define custom icon
 const customIcon = new L.Icon({
-    iconUrl: iconUrl, // Path to your custom marker icon
+    iconUrl: iconUrl,
     iconSize: [30, 30],
 });
 
