@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import PageBanner from './PageBanner'
+import ImpactMap from './ImpactMap'
 
 const Programs = () => {
     const location = useLocation()
@@ -50,6 +51,13 @@ const Programs = () => {
                     )
                     }
                 </div>
+                {/* Impact Section */}
+                <div className="impact-section px-32 py-16">
+                                <h2>Your Impact at a Glance</h2>
+                                <div className="map-container">
+                                    <ImpactMap />
+                                </div>
+                            </div>
             </div>
 
         </>
