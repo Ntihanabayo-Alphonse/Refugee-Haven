@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import PageBanner from './PageBanner'
 
 const Programs = () => {
+    const location = useLocation()
     return (
         <>
+            <PageBanner />
             <div className="programs px-28 py-16">
                 <h2>Our Programs</h2>
                 <p>Refugee Haven offers tailored programs designed to support each step on the journey to a new life</p>
@@ -23,22 +27,28 @@ const Programs = () => {
                         <p>Offering counseling and mental health services to foster resilience and well-being.</p>
                     </div>
 
-                    <div className="program1">
-                        <span><i className='fa fa-hands-holding-child'></i></span>
-                        <h3>Family Reunification Support</h3>
-                        <p>Helping families separated by conflict or displacement reunite with their loved ones.</p>
-                    </div>
-                    <div className="program1">
-                        <span><i className='fa fa-handshake'></i></span>
-                        <h3>Cultural Orientation and Integration</h3>
-                        <p>Guiding refugees through cultural differences and helping them navigate daily life in their new community.</p>
-                    </div>
-                    <div className="program1">
-                        <span><i className='fa fa-paintbrush'></i></span>
-                        <h3>Art Therapy & Creative Expression</h3>
-                        <p>Offering art therapy sessions and creative workshops as a form of emotional healing.</p>
-                    </div>
-                    <button>Explore more</button>
+
+                    {location.pathname === "/programs" ? (
+                        <>
+                            <div className="program1">
+                                <span><i className='fa fa-hands-holding-child'></i></span>
+                                <h3>Family Reunification Support</h3>
+                                <p>Helping families separated by conflict or displacement reunite with their loved ones.</p>
+                            </div>
+                            <div className="program1">
+                                <span><i className='fa fa-handshake'></i></span>
+                                <h3>Cultural Orientation and Integration</h3>
+                                <p>Guiding refugees through cultural differences and helping them navigate daily life in their new community.</p>
+                            </div>
+                            <div className="program1">
+                                <span><i className='fa fa-paintbrush'></i></span>
+                                <h3>Art Therapy & Creative Expression</h3>
+                                <p>Offering art therapy sessions and creative workshops as a form of emotional healing.</p>
+                            </div>
+                        </>) : (
+                        <Link to="/programs"><button>Explore more</button></Link>
+                    )
+                    }
                 </div>
             </div>
 
