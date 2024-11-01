@@ -3,6 +3,9 @@ import NavigationBar from './NavigationBar'
 import DonateBtn from './DonateBtn'
 import Programs from './Programs'
 import ImpactMap from './ImpactMap'
+import Donate from './Donate'
+import LatestNews from './LatestNews'
+
 
 const Home = () => {
     return (
@@ -30,9 +33,9 @@ const Home = () => {
                     <h2>About Us</h2>
                     <p>Refugee Haven is a compassionate, community-centered organization dedicated to empowering refugees and displaced individuals on their journey to rebuilding lives.</p>
                     <h3>Mission</h3>
-                    <p>To provide safe, welcoming spaces where refugees can find resources, support, and a strong sense of belonging as they adjust to new communities. 
-                        <br /> 
-                    At Refugee Haven, we understand that the path to a stable and fulfilling life begins with essential support, so we focus on providing housing, healthcare, education, and vocational training tailored to each individual's needs.</p>
+                    <p>To provide safe, welcoming spaces where refugees can find resources, support, and a strong sense of belonging as they adjust to new communities.
+                        <br />
+                        At Refugee Haven, we understand that the path to a stable and fulfilling life begins with essential support, so we focus on providing housing, healthcare, education, and vocational training tailored to each individual's needs.</p>
                     <DonateBtn />
                 </div>
             </div>
@@ -41,10 +44,21 @@ const Home = () => {
             <Programs />
 
             {/* Impact Section */}
-            <div className="impact-section px-32 py-16">
+            {/* <div className="impact-section px-32 py-16">
                 <h2>Your Impact at a Glance</h2>
                 <div className="map-container">
                     <ImpactMap />
+                </div>
+            </div> */}
+
+            {/* Donate Section */}
+            <Donate />
+
+            {/* Latest News Section */}
+            <div className="latest-news px-32 py-16">
+                <h2>Latest News</h2>
+                <div className="latestNews-container">
+                    <LatestNews />
                 </div>
             </div>
         </>
