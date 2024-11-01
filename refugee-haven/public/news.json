@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "New Refugee Support Center Opens",
+            "date": "2024-11-01",
+            "description": "A new support center has opened to provide essential services to refugee families."
+        },
+        {
+            "id": 2,
+            "title": "Annual Fundraiser a Success",
+            "date": "2024-10-28",
+            "description": "Our annual fundraiser helped raise over $100,000 for refugee aid programs."
+        },
+        {
+            "id": 3,
+            "title": "Volunteer Program Expands",
+            "date": "2024-10-30",
+            "description": "Refugee Haven expands its volunteer program to include more opportunities for community involvement."
+        }
+    ]
+}
