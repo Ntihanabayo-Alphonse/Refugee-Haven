@@ -49,9 +49,9 @@ const Home = () => {
             <Donate />
 
             {/* Latest News Section */}
-            <div className="latest-news px-32 py-16 bg-[#ebfff0]">
-                <h2 className='text-3xl text-[#1B3A57] font-bold text-center'>Latest News</h2>
-                <div className="latestNews-container p-10">
+            <div className="xl:px-32 sm:px-16 px-6 py-16 bg-[#ebfff0]">
+                <h2 className='sm:text-3xl text-2xl text-[#1B3A57] font-bold text-center'>Latest News</h2>
+                <div className="p-10">
                     <LatestNews />
                 </div>
             </div>

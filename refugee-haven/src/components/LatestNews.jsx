@@ -19,7 +19,7 @@ const LatestNews = () => {
     return (
         <>
         { news && (
-            <div className="grid grid-cols-3 gap-14">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-14 gap-10">
                 {news.map(article => (
                     <div key={article?.id} className="rounded-md shadow-lg px-5 py-2">
                         <h3 className="text-lg font-semibold">{article?.title}</h3>

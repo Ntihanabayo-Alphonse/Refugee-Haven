@@ -12,7 +12,7 @@ const Programs = () => {
             <div className="programs lg:px-28 md:px-24 px-14 py-16 bg-[#F2F2F2]">
                 <h2 className='sm:text-3xl text-2xl text-[#1B3A57] font-bold text-center'>Our Programs</h2>
                 <p className='text-center text-[15px] sm:text-[16px] font-bold'>Refugee Haven offers tailored programs designed to support each step on the journey to a new life</p>
-                <div className="programs-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 my-16">
+                <div className="programs-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 md:gap-14 my-16">
                     <div className="program1 bg-[#E9E4D3] shadow-lg rounded-lg p-6 text-center">
                         <span className="bg-[#FFEEE0] p-5 rounded-full"><i className='text-3xl text-[#F4A261] fa fa-people-roof'></i></span>
                         <h3 className="font-bold sm:text-xl mb-4 mt-10 text-lg">Safe Housing</h3>
@@ -48,7 +48,7 @@ const Programs = () => {
                                 <p className="text-[15px] sm:text-[16px] ">Offering art therapy sessions and creative workshops as a form of emotional healing.</p>
                             </div>
                         </>) : (
-                        <Link to="/programs"><button className='bg-[#5A8D66] py-2 px-10 rounded-[50px] text-lg text-white font-bold block mx-auto my-auto'>Explore more</button></Link>
+                        <Link to="/programs"><button className='bg-[#5A8D66] py-2 sm:px-10 px-6 rounded-[50px] sm:text-lg text-white font-bold block mx-auto my-auto'>Explore more</button></Link>
                     )
                     }
                 </div>
@@ -57,8 +57,8 @@ const Programs = () => {
             {location.pathname === "/programs" && (
                 <>
                   {/* Impact Section */}
-                  <div className="impact-section px-32 py-16">
-                                <h2 className='text-3xl text-[#1B3A57] font-bold text-center'>Your Impact at a Glance</h2>
+                  <div className="impact-section lg:px-32 sm:px-16 px-6 py-16">
+                                <h2 className='md:text-3xl sm:text-2xl text-xl text-[#1B3A57] font-bold text-center mb-12'>Your Impact at a Glance</h2>
                                 <div className="map-container">
                                     <ImpactMap />
                                 </div>
