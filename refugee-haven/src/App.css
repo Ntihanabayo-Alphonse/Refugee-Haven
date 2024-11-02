@@ -18,7 +18,7 @@
 }
 
 .page_banner-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/page-banner.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/page-banner.jpg");
   height: 100%;
   background-size: cover;
   background-position: center;
